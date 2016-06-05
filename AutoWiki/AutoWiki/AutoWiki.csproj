@@ -275,16 +275,6 @@
     <Content Include="Views\Cars\Index.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\News\News.cshtml" />
-    <Content Include="Views\News1\Create.cshtml" />
-    <Content Include="Views\News1\Delete.cshtml" />
-    <Content Include="Views\News1\Details.cshtml" />
-    <Content Include="Views\News1\Edit.cshtml" />
-    <Content Include="Views\News1\Index.cshtml" />
-    <Content Include="Views\News2\Create.cshtml" />
-    <Content Include="Views\News2\Delete.cshtml" />
-    <Content Include="Views\News2\Details.cshtml" />
-    <Content Include="Views\News2\Edit.cshtml" />
-    <Content Include="Views\News2\Index.cshtml" />
     <Content Include="Views\New\Create.cshtml" />
     <Content Include="Views\New\Delete.cshtml" />
     <Content Include="Views\New\Details.cshtml" />
