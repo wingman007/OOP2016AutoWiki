@@ -196,6 +196,7 @@
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +204,7 @@
     <Compile Include="Models\Cars.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -271,6 +273,23 @@
     <Content Include="Views\Cars\Details.cshtml" />
     <Content Include="Views\Cars\Edit.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\News.cshtml" />
+    <Content Include="Views\News1\Create.cshtml" />
+    <Content Include="Views\News1\Delete.cshtml" />
+    <Content Include="Views\News1\Details.cshtml" />
+    <Content Include="Views\News1\Edit.cshtml" />
+    <Content Include="Views\News1\Index.cshtml" />
+    <Content Include="Views\News2\Create.cshtml" />
+    <Content Include="Views\News2\Delete.cshtml" />
+    <Content Include="Views\News2\Details.cshtml" />
+    <Content Include="Views\News2\Edit.cshtml" />
+    <Content Include="Views\News2\Index.cshtml" />
+    <Content Include="Views\New\Create.cshtml" />
+    <Content Include="Views\New\Delete.cshtml" />
+    <Content Include="Views\New\Details.cshtml" />
+    <Content Include="Views\New\Edit.cshtml" />
+    <Content Include="Views\New\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
