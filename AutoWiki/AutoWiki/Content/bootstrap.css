@@ -276,6 +276,7 @@ table {
   }
   .navbar {
     display: none;
+   
   }
   .table td,
   .table th {
@@ -312,10 +313,10 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #ffffff;
+  color: white;
+  background-color:  #80002a;
 }
 
 input,
@@ -805,6 +806,31 @@ pre code {
 }
 
 .row:after {
+  clear: both;
+}
+
+.row2 {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row2:before,
+.row2:after {
+  display: table;
+  content: " ";
+}
+
+.row2:after {
+  clear: both;
+}
+
+.row2:before,
+.row2:after {
+  display: table;
+  content: " ";
+}
+
+.row2:after {
   clear: both;
 }
 
@@ -4928,26 +4954,27 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
+  padding: 20px;
+  margin-top:20px;
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
-  background-color: #eeeeee;
+  color: black;
+  background-color:  #ffffe6;
 }
 
 .jumbotron h1 {
-  line-height: 1;
+  line-height: 0.7;
   color: inherit;
 }
 
 .jumbotron p {
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .container .jumbotron {
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
