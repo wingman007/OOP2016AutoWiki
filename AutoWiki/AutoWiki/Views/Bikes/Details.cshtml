@@ -1,0 +1,90 @@
+﻿@model AutoWiki.Models.Bikes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bikes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Engine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Engine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Power)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Power)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gearbox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gearbox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fuel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fuel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fuelcapacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fuelcapacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Topspeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Topspeed)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
