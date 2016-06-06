@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<AutoWiki.Models.Bikes>
 
 @{
-    ViewBag.Title = "Bikes Catalog";
+    ViewBag.Title = "Index";
 }
 
 <h2>Bikes Catalog</h2>
-<div class="btn btn-default">
-        @Html.ActionLink("Add Bike", "Create")
-</div>
 
-<table class="table table-condensed">
+<p>
+    @Html.ActionLink("Add Bike", "Create")
+</p>
+<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Model)
@@ -20,7 +20,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Category)
         </th>
-
         <th>
             Options
         </th>

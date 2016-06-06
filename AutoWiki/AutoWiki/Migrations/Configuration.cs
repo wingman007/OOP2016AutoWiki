@@ -10,7 +10,6 @@ namespace AutoWiki.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "AutoWiki.Models.BikesDBContent";
         }
 
         protected override void Seed(AutoWiki.Models.BikesDBContent context)
