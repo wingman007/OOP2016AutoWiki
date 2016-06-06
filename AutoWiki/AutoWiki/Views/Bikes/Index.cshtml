@@ -1,15 +1,15 @@
 ﻿@model IEnumerable<AutoWiki.Models.Bikes>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Bikes Catalog";
 }
 
-<h2>Index</h2>
+<h2>Bikes Catalog</h2>
+<div class="btn btn-default">
+        @Html.ActionLink("Add Bike", "Create")
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
+<table class="table table-condensed">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Model)
@@ -20,25 +20,10 @@
         <th>
             @Html.DisplayNameFor(model => model.Category)
         </th>
+
         <th>
-            @Html.DisplayNameFor(model => model.Engine)
+            Options
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Power)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Gearbox)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fuel)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Fuelcapacity)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Topspeed)
-        </th>
-        <th></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -51,24 +36,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Category)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Engine)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Power)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Gearbox)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fuel)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Fuelcapacity)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Topspeed)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
