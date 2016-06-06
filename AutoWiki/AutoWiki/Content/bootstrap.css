@@ -4972,20 +4972,22 @@ a.list-group-item.active > .badge,
 }
 
 .container .jumbotron {
-  border-radius: 5px;
+  border-radius: 1000px;
+  background-color: rgba(104, 0, 34, 0.83);
 }
 
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
   .container .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 70px;
+    color:white;
   }
 }
 
