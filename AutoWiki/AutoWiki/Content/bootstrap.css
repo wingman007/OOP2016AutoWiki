@@ -96,7 +96,7 @@ hr {
 
 mark {
   color: #000;
-  background: #ff0;
+  background: #ff0;/*#ff0 / #000*/
 }
 
 code,
@@ -280,7 +280,7 @@ table {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: gray; /*#fff*/ !important;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
