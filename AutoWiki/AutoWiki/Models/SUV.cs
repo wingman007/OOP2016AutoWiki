@@ -1,26 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace AutoWiki.Models
 {
-    public class Cars
+    public class SUV
     {
         public int ID { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public string Engine { get; set; }
         public string HorsePower { get; set; }
-        public string Coupe { get; set; }
         public int MaxSpeed { get; set; }
-    }
-    public class CarsDBContent : DbContext
-    {
-        public DbSet<Cars> Car { get; set; }
-        public DbSet<Bikes> Bike { get; set; }
-        public DbSet<News> News { get; set; }
-        public DbSet<SUV> SUVS { get; set; }
     }
 }
