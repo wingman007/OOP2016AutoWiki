@@ -193,17 +193,26 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BikesController.cs" />
+    <Compile Include="Controllers\Bikes1Controller.cs" />
     <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\SUVsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201606060104016_Bikes.cs" />
-    <Compile Include="Migrations\201606060104016_Bikes.Designer.cs">
-      <DependentUpon>201606060104016_Bikes.cs</DependentUpon>
+    <Compile Include="Migrations\201605251028167_InitialCreate.cs" />
+    <Compile Include="Migrations\201605251028167_InitialCreate.Designer.cs">
+      <DependentUpon>201605251028167_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606060848287_Bikes.cs" />
+    <Compile Include="Migrations\201606060848287_Bikes.Designer.cs">
+      <DependentUpon>201606060848287_Bikes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606060929429_SUVs.cs" />
+    <Compile Include="Migrations\201606060929429_SUVs.Designer.cs">
+      <DependentUpon>201606060929429_SUVs.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -212,6 +221,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\News.cs" />
+    <Compile Include="Models\SUV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -286,19 +296,22 @@
     <Content Include="Views\Cars\Details.cshtml" />
     <Content Include="Views\Cars\Edit.cshtml" />
     <Content Include="Views\Cars\Index.cshtml" />
-    <Content Include="Views\News\Index.cshtml" />
-    <Content Include="Views\News\News.cshtml" />
-    <Content Include="Views\New\Create.cshtml" />
-    <Content Include="Views\New\Delete.cshtml" />
-    <Content Include="Views\New\Details.cshtml" />
-    <Content Include="Views\New\Edit.cshtml" />
-    <Content Include="Views\New\Index.cshtml" />
-    <Content Include="Views\Bikes\Create.cshtml" />
-    <Content Include="Views\Bikes\Delete.cshtml" />
-    <Content Include="Views\Bikes\Details.cshtml" />
-    <Content Include="Views\Bikes\Edit.cshtml" />
-    <Content Include="Views\Bikes\Index.cshtml" />
     <Content Include="Views\Home\CompareCars.cshtml" />
+    <Content Include="Views\Bikes1\Create.cshtml" />
+    <Content Include="Views\Bikes1\Delete.cshtml" />
+    <Content Include="Views\Bikes1\Details.cshtml" />
+    <Content Include="Views\Bikes1\Edit.cshtml" />
+    <Content Include="Views\Bikes1\Index.cshtml" />
+    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\News\Delete.cshtml" />
+    <Content Include="Views\News\Details.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\SUVs\Create.cshtml" />
+    <Content Include="Views\SUVs\Delete.cshtml" />
+    <Content Include="Views\SUVs\Details.cshtml" />
+    <Content Include="Views\SUVs\Edit.cshtml" />
+    <Content Include="Views\SUVs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -312,8 +325,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201606060104016_Bikes.resx">
-      <DependentUpon>201606060104016_Bikes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201605251028167_InitialCreate.resx">
+      <DependentUpon>201605251028167_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606060848287_Bikes.resx">
+      <DependentUpon>201606060848287_Bikes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606060929429_SUVs.resx">
+      <DependentUpon>201606060929429_SUVs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

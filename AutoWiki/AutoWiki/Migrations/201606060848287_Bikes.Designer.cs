@@ -13,7 +13,7 @@ namespace AutoWiki.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201606060104016_Bikes"; }
+            get { return "201606060848287_Bikes"; }
         }
         
         string IMigrationMetadata.Source

@@ -10,107 +10,107 @@ using AutoWiki.Models;
 
 namespace AutoWiki.Controllers
 {
-    public class NewsController : Controller
+    public class SUVsController : Controller
     {
         private CarsDBContent db = new CarsDBContent();
 
-        // GET: News
+        // GET: SUVs
         public ActionResult Index()
         {
-            return View(db.News);
+            return View(db.SUVS.ToList());
         }
 
-        // GET: News/Details/5
+        // GET: SUVs/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.News.Find(id);
-            if (news == null)
+            SUV sUV = db.SUVS.Find(id);
+            if (sUV == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(sUV);
         }
 
-        // GET: News/Create
+        // GET: SUVs/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: News/Create
+        // POST: SUVs/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Brand,Model,About")] News news)
+        public ActionResult Create([Bind(Include = "ID,Brand,Model,Engine,HorsePower,MaxSpeed")] SUV sUV)
         {
             if (ModelState.IsValid)
             {
-                db.News.Add(news);
+                db.SUVS.Add(sUV);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(news);
+            return View(sUV);
         }
 
-        // GET: News/Edit/5
+        // GET: SUVs/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.News.Find(id);
-            if (news == null)
+            SUV sUV = db.SUVS.Find(id);
+            if (sUV == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(sUV);
         }
 
-        // POST: News/Edit/5
+        // POST: SUVs/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Brand,Model,About")] News news)
+        public ActionResult Edit([Bind(Include = "ID,Brand,Model,Engine,HorsePower,MaxSpeed")] SUV sUV)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(news).State = EntityState.Modified;
+                db.Entry(sUV).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(news);
+            return View(sUV);
         }
 
-        // GET: News/Delete/5
+        // GET: SUVs/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.News.Find(id);
-            if (news == null)
+            SUV sUV = db.SUVS.Find(id);
+            if (sUV == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(sUV);
         }
 
-        // POST: News/Delete/5
+        // POST: SUVs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            News news = db.News.Find(id);
-            db.News.Remove(news);
+            SUV sUV = db.SUVS.Find(id);
+            db.SUVS.Remove(sUV);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

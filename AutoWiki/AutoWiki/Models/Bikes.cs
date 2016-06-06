@@ -20,9 +20,4 @@ namespace AutoWiki.Models
         public int Topspeed { get; set; }
 
     }
-
-    public class BikesDBContent : DbContext
-    {
-        public DbSet<Bikes> Bike { get; set; }
-    }
 }

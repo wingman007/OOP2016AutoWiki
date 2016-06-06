@@ -1,13 +1,14 @@
-﻿@model AutoWiki.Models.News
+﻿@model AutoWiki.Models.SUV
 
 @{
     ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
 
 <div>
-    <h4>News</h4>
+    <h4>SUV</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -27,11 +28,27 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.About)
+            @Html.DisplayNameFor(model => model.Engine)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.About)
+            @Html.DisplayFor(model => model.Engine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorsePower)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorsePower)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxSpeed)
         </dd>
 
     </dl>

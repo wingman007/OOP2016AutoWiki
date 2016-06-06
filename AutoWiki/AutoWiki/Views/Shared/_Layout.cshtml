@@ -23,19 +23,10 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    @if (Request.IsAuthenticated)
-                    {
                     <li>@Html.ActionLink("Cars", "Index", "Cars")</li>
-                    }
-                    @if (Request.IsAuthenticated)
-                    {
-                    <li>@Html.ActionLink("Motors", "Index", "Bikes")</li>
-                    }
-                    @if (Request.IsAuthenticated)
-                    {
-                        <li>@Html.ActionLink("News", "News", "News")</li>
-                    }
-                    
+                    <li>@Html.ActionLink("Motors", "Index", "Bikes1")</li>
+                    <li>@Html.ActionLink("SUVs", "Index", "SUVs")</li>
+                    <li>@Html.ActionLink("News", "Index", "News")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
