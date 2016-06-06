@@ -10,17 +10,16 @@ using AutoWiki.Models;
 
 namespace AutoWiki.Controllers
 {
-    public class BikesController : Controller
+    public class Bikes1Controller : Controller
     {
-        private BikesDBContent db = new BikesDBContent();
+        private CarsDBContent db = new CarsDBContent();
 
-        // GET: Bikes
+        // GET: Bikes1
         public ActionResult Index()
         {
             return View(db.Bike.ToList());
         }
-
-        // GET: Bikes/Details/5
+        // GET: Bikes1/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,13 +34,13 @@ namespace AutoWiki.Controllers
             return View(bikes);
         }
 
-        // GET: Bikes/Create
+        // GET: Bikes1/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Bikes/Create
+        // POST: Bikes1/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -58,7 +57,7 @@ namespace AutoWiki.Controllers
             return View(bikes);
         }
 
-        // GET: Bikes/Edit/5
+        // GET: Bikes1/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +72,7 @@ namespace AutoWiki.Controllers
             return View(bikes);
         }
 
-        // POST: Bikes/Edit/5
+        // POST: Bikes1/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +88,7 @@ namespace AutoWiki.Controllers
             return View(bikes);
         }
 
-        // GET: Bikes/Delete/5
+        // GET: Bikes1/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +103,7 @@ namespace AutoWiki.Controllers
             return View(bikes);
         }
 
-        // POST: Bikes/Delete/5
+        // POST: Bikes1/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

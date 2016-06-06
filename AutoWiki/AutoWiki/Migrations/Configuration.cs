@@ -5,14 +5,15 @@ namespace AutoWiki.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<AutoWiki.Models.BikesDBContent>
+    internal sealed class Configuration : DbMigrationsConfiguration<AutoWiki.Models.CarsDBContent>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "AutoWiki.Models.CarsDBContent";
         }
 
-        protected override void Seed(AutoWiki.Models.BikesDBContent context)
+        protected override void Seed(AutoWiki.Models.CarsDBContent context)
         {
             //  This method will be called after migrating to the latest version.
 

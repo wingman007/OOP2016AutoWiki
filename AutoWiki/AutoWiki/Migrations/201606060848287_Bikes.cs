@@ -8,7 +8,7 @@ namespace AutoWiki.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Bikes",
+                "dbo.Bike",
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
@@ -23,12 +23,11 @@ namespace AutoWiki.Migrations
                         Topspeed = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
-            
         }
         
         public override void Down()
         {
-            DropTable("dbo.Bikes");
+            DropTable("dbo.Bike");
         }
     }
 }

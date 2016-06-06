@@ -14,8 +14,4 @@ namespace AutoWiki.Models
         public string About { get; set; }
 
     }
-    public class NewsDBContent : DbContext
-    {
-        public DbSet<News> New { get; set; }
-    }
 }

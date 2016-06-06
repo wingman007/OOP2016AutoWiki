@@ -19,5 +19,7 @@ namespace AutoWiki.Models
     public class CarsDBContent : DbContext
     {
         public DbSet<Cars> Car { get; set; }
+        public DbSet<Bikes> Bike { get; set; }
+        public DbSet<News> News { get; set; }
     }
 }
