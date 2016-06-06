@@ -22,3 +22,13 @@ select,
 textarea {
     max-width: 280px;
 }
+
+a {
+    color: #e23d2a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9c3024;
+    text-decoration: none;
+}
